@@ -1,0 +1,232 @@
+{
+    "game_title": "Echoance",
+    "subtitle": "The Emotional Stream",
+    "prologue": {
+        "narration": [
+            "Static. Darkness. Then light. A sharp pulse hits your skull.",
+            "White ceiling. Too white. Metal arms hang above you like frozen insects.",
+            "Thin wires crawl from a machine into the sides of your head.",
+            "A low hum fills the room. Not loud. Constant. Like something breathing underground."
+        ],
+        "player_thoughts": [
+            "My head... it feels like someone cracked it open.",
+            "I shouldn't be awake."
+        ],
+        "system_dialogue": [
+            "Subject 12 consciousness detected.",
+            "Emotional Stream synchronization: 3%.",
+            "Location: Nexford Research Facility.",
+            "You are participating in the Emotional Pattern Dive."
+        ],
+        "player_choices": [
+            {
+                "id": "inspect_console",
+                "text": "Inspect the console beside you",
+                "outcome": "Data scrolls fast brain waves emotional spikes dates names.",
+                "next_memory_id": "scholar_1800s"
+            },
+            {
+                "id": "look_around_lab",
+                "text": "Look around the laboratory",
+                "outcome": "On the walls photos. Old faces, same eyes.",
+                "next_memory_id": "scholar_1800s"
+            },
+            {
+                "id": "remove_device",
+                "text": "Forcefully try to remove the device",
+                "outcome": "Pain. Alarms. A memory surfaces unbidden...",
+                "next_memory_id": "scholar_1800s"
+            }
+        ]
+    },
+    "memory_jumps": [
+        {
+            "id": "scholar_1800s",
+            "title": "Memory Jump 1 - The Scholar (1800s)",
+            "narration": [
+                "You stand inside an endless library. Candles float.",
+                "Books tower like silent judges.",
+                "Charlotte Nexford sits at a desk, quill in hand.",
+                "She does not look surprised to see you."
+            ],
+            "npc": {
+                "name": "Charlotte Nexford",
+                "dialogues": [
+                    "You came back earlier this time.",
+                    "You know what I chose. That is worse.",
+                    "Every generation feels the weight of silence.",
+                    "You feel it too, don't you?"
+                ]
+            },
+            "player_choices": [
+                {
+                    "id": "ask_hidden_knowledge",
+                    "text": "Ask about the hidden knowledge",
+                    "outcome": "Charlotte slides a coded letter toward you. Emotional Flag: Awareness.",
+                    "next_memory_id": "rebel_1930s"
+                },
+                {
+                    "id": "explore_library",
+                    "text": "Explore the library silently",
+                    "outcome": "You find notes and books that whisper secrets. Emotional Flag: Curiosity.",
+                    "next_memory_id": "rebel_1930s"
+                },
+                {
+                    "id": "ignore_scholar",
+                    "text": "Refuse to engage and walk away",
+                    "outcome": "The candles dim. Your denial echoes through time. Emotional Flag: Denial.",
+                    "next_memory_id": "rebel_1930s"
+                }
+            ]
+        },
+        {
+            "id": "rebel_1930s",
+            "title": "Memory Jump 2 - The Rebel (1930s)",
+            "narration": [
+                "Gunfire. Smoke. Cobblestone streets slick with rain.",
+                "Jace Nexford grabs your arm. His grip is iron.",
+                "People run. Posters peel off walls.",
+                "The city smells of iron and fear."
+            ],
+            "npc": {
+                "name": "Jace Nexford",
+                "dialogues": [
+                    "Don't freeze. Freezing gets people killed.",
+                    "It never is. Until it is.",
+                    "Every choice stains you.",
+                    "You just decide if it's worth it."
+                ]
+            },
+            "player_choices": [
+                {
+                    "id": "ally_rebel",
+                    "text": "Fight alongside Jace",
+                    "outcome": "",
+                    "sub_choices": [
+                        {
+                            "id": "follow_orders",
+                            "text": "Follow orders - mission success",
+                            "outcome": "Civilians die. The mission succeeds. Emotional Flag: Sacrifice.",
+                            "next_memory_id": "scientist_modern"
+                        },
+                        {
+                            "id": "save_civilians",
+                            "text": "Save civilians - Jace is wounded",
+                            "outcome": "You pull them to safety. Jace takes a bullet. Emotional Flag: Moral Conflict.",
+                            "next_memory_id": "scientist_modern"
+                        }
+                    ]
+                },
+                {
+                    "id": "sabotage_plan",
+                    "text": "Sabotage his plan",
+                    "outcome": "Shots ring out. Jace's eyes burn with betrayal. Emotional Flag: Control.",
+                    "next_memory_id": "scientist_modern"
+                },
+                {
+                    "id": "observe_only",
+                    "text": "Observe without interference",
+                    "outcome": "You learn patterns. History flows around you. Emotional Flag: Detachment.",
+                    "next_memory_id": "scientist_modern"
+                }
+            ]
+        },
+        {
+            "id": "scientist_modern",
+            "title": "Memory Jump 3 - The Scientist (Modern Era)",
+            "narration": [
+                "Silence. Glass. Holograms float around you.",
+                "Brain scans pulse on screens - your face among them.",
+                "Their faces. All the Nexfords who came before.",
+                "A figure materializes from the quantum static."
+            ],
+            "npc": {
+                "name": "Dr. Damon Nexford",
+                "dialogues": [
+                    "If you're here the system worked.",
+                    "Or it failed spectacularly. Same result.",
+                    "Turns out understanding isn't enough."
+                ]
+            },
+            "echo": {
+                "dialogues": [
+                    "You feel them. All of them.",
+                    "The weight of every choice. Every regret.",
+                    "To end us or become us."
+                ]
+            },
+            "player_choices": [
+                {
+                    "id": "break_cycle",
+                    "text": "Break the cycle - choose freedom",
+                    "outcome": "You rip the device out. Silence. The wires fall. You breathe.",
+                    "next_memory_id": ""
+                },
+                {
+                    "id": "continue_cycle",
+                    "text": "Continue the cycle - preserve history",
+                    "outcome": "The system stabilizes. History survives. Through you. Always.",
+                    "next_memory_id": ""
+                },
+                {
+                    "id": "merge_echo",
+                    "text": "Merge with the Echo - become eternal",
+                    "outcome": "Memories flood in. Too many. Too fast. Reality fractures.",
+                    "next_memory_id": ""
+                },
+                {
+                    "id": "panic",
+                    "text": "Panic - Refuse to choose",
+                    "outcome": "System overloads. Consciousness fragments. Subject 12 lost.",
+                    "next_memory_id": ""
+                }
+            ]
+        }
+    ],
+    "endings": [
+        {
+            "id": "break_cycle",
+            "title": "ENDING: Break the Cycle",
+            "narration": [
+                "You breathe. The noise fades. The wires loosen.",
+                "For the first time, you feel yourself.",
+                "No echoes. No ancestors. Just you.",
+                "The Emotional Stream is terminated.",
+                "You are free."
+            ]
+        },
+        {
+            "id": "continue_cycle",
+            "title": "ENDING: Continue the Cycle",
+            "narration": [
+                "The system stabilizes. The weight remains.",
+                "History survives... through you.",
+                "Another generation will carry this burden.",
+                "As you carried theirs.",
+                "The cycle continues."
+            ]
+        },
+        {
+            "id": "merge_echo",
+            "title": "ENDING: Merge with the Echo",
+            "narration": [
+                "Memories flood in. Too many. Too fast.",
+                "You are Charlotte. You are Jace. You are Damon.",
+                "You are everyone. And no one.",
+                "Time folds. Reality fractures.",
+                "You understand now. You understand everything."
+            ]
+        },
+        {
+            "id": "panic",
+            "title": "ENDING: Collapse",
+            "narration": [
+                "Your heart races. The system overloads.",
+                "Feedback loops spiral out of control.",
+                "Subject 12 consciousness: fragmented.",
+                "Status: lost.",
+                "Silence."
+            ]
+        }
+    ]
+}
